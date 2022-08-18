@@ -1,0 +1,49 @@
+.dropdown-box{
+    margin: 0px 33%;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    width: 30%;
+    background-color: #395f8c;
+    border-radius: 5px;
+    display: flex;
+}
+
+.dropdown-title{
+    font-family: "Inter";
+    font-style: bolder;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    align-items: center;
+    color: white;
+    margin-left: 40px;
+}
+
+#icon{
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    
+    .dropdown-by-title{
+        font-size: 16px;
+    }
+    
+    .dropdown-box{
+        margin-left: 90px;
+        width: 100%;
+    }
+  }
+@media only screen and (max-width: 450px) {
+    .dropdown-by-title{
+        font-size: 13px;
+    }
+    .dropdown-box{
+        margin-left: 70px;
+        width: 100%;
+    }
+}
