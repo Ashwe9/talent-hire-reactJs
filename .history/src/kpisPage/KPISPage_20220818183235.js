@@ -3,7 +3,7 @@ import './KPISPage.css'
 import { Navbar } from '../shared-components/Navbar/Navbar'
 import Header from './Header'
 import DropDown from './DropDown'
-import { Footer } from '../shared-components/Footer/Footer'
+import { Footer }from '../shared-components/Footer/Footer'
 
 const KPISPage = () => {
   return (
@@ -15,7 +15,7 @@ const KPISPage = () => {
       <DropDown title="Finance"/>
       <DropDown title="Development"/>
       <DropDown title="Data"/>
-      <Footer nextTitle="Next: Project Details" nextPath="/projectdetails"/>
+      <Footer nextTitle="Next: Project Details" nextPath="/projectdetails" previousPath="/"/>
     </div>
   )
 }

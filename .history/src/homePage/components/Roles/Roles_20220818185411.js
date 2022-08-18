@@ -30,27 +30,27 @@ export const Roles = () => {
           <div className='row'>
             <div className={`col-5 ${checked_1 ? "role-item-active" : "role-item"}`}>
               <input type="checkbox" id="role_1" name="role_1" className='role-check' onClick={handle_1}/>
-              <label className={`${checked_1 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
+              <label htmlFor="role_1" className={`${checked_1 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
             </div>
             <div className={`col-5 ${checked_2 ? "role-item-active" : "role-item"}`}>
               <input type="checkbox" id="role_2" name="role_2"  className='role-check' onClick={handle_2}/>
-              <label className={`${checked_2 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
+              <label htmlFor="role_2" className={`${checked_2 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
             </div>
           </div>
           <div className='row'>
             <div className={`col-5 ${checked_3 ? "role-item-active" : "role-item"}`}>
               <input type="checkbox" id="role_3" name="role_3" className='role-check' onClick={handle_3}/>
-              <label className={`${checked_3 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
+              <label htmlFor="role_3" className={`${checked_3 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
             </div>
             <div className={`col-5 ${checked_4 ? "role-item-active" : "role-item"}`}>
               <input type="checkbox" id="role_4" name="role_4" className='role-check' onClick={handle_4}/>
-              <label className={`${checked_4 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
+              <label htmlFor="role_4" className={`${checked_4 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
             </div>
           </div>
           <div className='row'>
             <div className={`col-5 ${checked_5 ? "role-item-active" : "role-item"}`}>
               <input type="checkbox" id="role_5" name="role_5" className='role-check' onClick={handle_5}/>
-              <label className={`${checked_5 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
+              <label htmlFor="role_5" className={`${checked_5 ? "role-item-paragraph-active" : "role-item-paragraph"}`}>Sales-Bussiness development Manager, Sales Director, Sales Executive</label>
             </div>
           </div>
         </form>

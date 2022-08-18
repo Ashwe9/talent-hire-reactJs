@@ -3,7 +3,7 @@ import './Footer.css'
 import { useNavigate} from 'react-router-dom'
 
 
-export  const Footer = ({nextTitle, nextPath}) => {
+export const Footer = ({nextTitle, nextPath}) => {
   let navigate =useNavigate();
   return (
       <footer>
@@ -12,13 +12,13 @@ export  const Footer = ({nextTitle, nextPath}) => {
             <div className='buttons'>
               <button className='Footer-button-back'
               onClick={() => {
-                navigate(-1)
+                navigate.goBack();
               } }
                 >Back</button>
 
               <button className='Footer-button-next'
               onClick={() => {
-                navigate({nextPath}, { replace: true });
+                navigate({nextPath});
               } }
                 >{nextTitle}</button>
         </div>

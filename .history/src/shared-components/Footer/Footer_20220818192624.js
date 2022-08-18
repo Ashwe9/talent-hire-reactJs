@@ -12,7 +12,7 @@ export  const Footer = ({nextTitle, nextPath}) => {
             <div className='buttons'>
               <button className='Footer-button-back'
               onClick={() => {
-                navigate(-1)
+                
               } }
                 >Back</button>
 

@@ -9,8 +9,8 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/kpis" element={<KPISPage />} />
-        <Route exact path="/projectdetails" element={<ProjectDetails />} />
+        <Route exact path="/kpis" component={KPISPage} />
+        <Route exact path="/projectdetails" component={ProjectDetails} />
       </Routes>
     </Router>
   );

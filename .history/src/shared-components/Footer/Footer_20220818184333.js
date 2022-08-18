@@ -1,10 +1,11 @@
 import React from 'react'
 import './Footer.css'
-import { useNavigate} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 
-export  const Footer = ({nextTitle, nextPath}) => {
-  let navigate =useNavigate();
+export const Footer = ({nextTitle, nextPath}) => {
+  let history =useHistory();
+
   return (
       <footer>
         <div className='Footer-box'>
@@ -12,13 +13,13 @@ export  const Footer = ({nextTitle, nextPath}) => {
             <div className='buttons'>
               <button className='Footer-button-back'
               onClick={() => {
-                navigate(-1)
+                history.goBack();
               } }
                 >Back</button>
 
               <button className='Footer-button-next'
               onClick={() => {
-                navigate({nextPath}, { replace: true });
+                history.push({nextPath});
               } }
                 >{nextTitle}</button>
         </div>
@@ -26,5 +27,3 @@ export  const Footer = ({nextTitle, nextPath}) => {
       </footer>
     )
   }
-
-

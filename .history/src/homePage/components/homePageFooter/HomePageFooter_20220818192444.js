@@ -13,7 +13,7 @@ export const HomePageFooter = () => {
             <span className="HomePageFooter-button">
               <button 
               onClick={() => {
-                navigate('/kpis' , { replace: true });
+                navigate('/kpis');
               } }
               className='btn btn-dark HomePageFooter-btn' >Get Started</button>
             </span>

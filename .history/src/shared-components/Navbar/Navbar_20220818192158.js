@@ -16,7 +16,7 @@ export const Navbar = () => {
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <a className="nav-link" href="#" onClick={() => {
-                navigate('/', { replace: true });
+                navigate('/');
               } }>Home</a>
           </li>
         
