@@ -1,0 +1,17 @@
+#HomeScreenFooter-line{
+    background-color: gray;
+}
+.HomeScreenFooter-box{
+    padding: 20%;
+}
+
+.HomeScreenFooter-btn{
+    
+    font-family: "Inter";
+    font-style: normal;
+    background: #395f8c;
+    padding: 5px 50px;
+    border-color: #395f8c;
+    height: 45px;
+    width: 300px;
+}

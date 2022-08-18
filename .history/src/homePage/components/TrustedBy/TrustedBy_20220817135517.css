@@ -1,0 +1,21 @@
+.trusted-by-box{
+    background-color: #EDFCF0;
+    margin: 10px 10%;
+    padding: 3%;
+    margin-top: 7%;
+}
+
+.trusted-by-title{
+    font-family: "Inter";
+    font-style: bolder;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #141414;
+}
+
+.trusted-item{
+    height: 10%;
+    padding: 3%;
+}

@@ -1,0 +1,32 @@
+#HomePageFooter-line{
+    background-color: gray;
+    width: 61%;
+}
+.HomePageFooter-box{
+    padding: 1%;
+}
+
+.HomePageFooter-btn{
+    margin-top: 3%;
+    /* margin-left: 30%; */
+    font-family: "Inter";
+    font-style: normal;
+    background: #395f8c;
+    padding: 1% 1%;
+    border-color: #395f8c;
+    height: 10%;
+    width: 20%;
+    border-radius: 0.5rem;
+    margin-left: 40%;
+    margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 350px) {
+    .HomePageFooter-btn{
+        padding: 2% ;        
+        height: 10%;
+        width: 40%;
+        margin-left: 30%;
+        font-size: 12px;
+    }
+}

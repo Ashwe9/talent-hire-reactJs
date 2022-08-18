@@ -1,0 +1,45 @@
+.icon{
+    width: 38.5px;
+}
+
+.title{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    color: #444444;
+    padding-left: 10px;
+}
+
+#navbarText{
+    margin-left: 30%;
+}
+.navbar-items{
+    margin: 0 35%;
+
+}
+
+.nav-item{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    align-items: center;
+    color: #444444;
+    margin-right: 1%;
+}
+
+.navbar-btn{
+    font-family: "Inter";
+    font-style: normal;
+    background: #75141D;
+    padding: 5px 50px;
+    border-color: #75141D;
+    height: 100%;
+}
+
+.navbar{
+    margin: 10px 5%;
+}

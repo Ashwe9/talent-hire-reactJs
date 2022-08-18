@@ -1,0 +1,15 @@
+.header-box{
+    margin: 10px 10%;
+    padding: 3%;
+    align-items: center;
+}
+
+.header-by-title{
+    font-family: "Inter";
+    font-style: bolder;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    align-items: center;
+    color: #141414;
+}

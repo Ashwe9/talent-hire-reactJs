@@ -1,0 +1,37 @@
+.dropdown-box{
+    margin: 0px 30%;
+    align-items: center;
+    width: 35%;
+    background-color: #395f8c;
+}
+
+.dropdown-by-title{
+    font-family: "Inter";
+    font-style: bolder;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+    
+    .dropdown-by-title{
+        font-size: 16px;
+    }
+    
+    .dropdown-box{
+        margin-left: 90px;
+        width: 100%;
+    }
+  }
+@media only screen and (max-width: 450px) {
+    .dropdown-by-title{
+        font-size: 13px;
+    }
+    .dropdown-box{
+        margin-left: 70px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+.header-box{
+    margin: 30px 30%;
+    padding: 3%;
+    align-items: center;
+    width: 35%;
+}
+
+.header-by-title{
+    font-family: "Inter";
+    font-style: bolder;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    align-items: center;
+    color: #141414;
+}
+
+
+@media only screen and (max-width: 700px) {
+    h2{
+        font-size: 20px;
+    }
+    .header-by-title{
+        font-size: 10px;
+    }
+    
+    .role-item-paragraph{
+        font-size: 10px;
+    }
+    .roles-question{
+        font-size: 14px;
+    }
+    
+  }
+@media only screen and (max-width: 450px) {
+    h2{
+        font-size: 14px;
+    }
+    .role-item-paragraph-active{
+        font-size: 8px;
+    }
+    
+    .role-item-paragraph{
+        font-size: 8px;
+    }
+    .roles-question{
+        font-size: 10px;
+    }
+}
