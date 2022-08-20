@@ -22,7 +22,9 @@ export  const Footer = ({nextTitle, nextPath, previousPath}) => {
             <hr id="footer-line"/>
             <div className='buttons'>
               <button className='Footer-button-back'
-              onClick={goBack}
+              onClick={() => {
+                navigate(-1);
+              } }
                 >Back</button>
 
               <button className='Footer-button-next'

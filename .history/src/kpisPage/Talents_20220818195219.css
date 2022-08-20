@@ -67,11 +67,10 @@
     
     .talent-item-paragraph{
         font-size: 10px;
-        font-weight: bold;
     }
 
     .talents-box{
-        margin-left: 80px;
+        margin-left: 50px;
     }
 
     .talent-item{
@@ -80,23 +79,17 @@
         box-sizing: border-box;
         display: flex;
         width: fit-content;
-        margin-bottom: 5px;
     }
     
-    .talent-item-active{
-        opacity: 0.8;
-        background: #f0f0f0;
-        box-sizing: border-box;
+    
+    .talent-item-paragraph-active{
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 16px;
         display: flex;
-        width: fit-content;
-    }
-
-    #icons{
-        color: #395F8C;
-        position:absolute;
-        margin-top: 2px;
-        margin-left: 2px;
-        margin-right: 0.5px;
+        align-items: center;
+        color: #395f8c;
     }
   }
 @media only screen and (max-width: 450px) {
@@ -106,25 +99,6 @@
     
     .talent-item-paragraph{
         font-size: 8px;
-    }
-    .talents-box{
-        margin-left: 110px;
-    }
-
-    .talent-item{
-        opacity: 0.8;
-        background: #f0f0f0;
-        box-sizing: border-box;
-        display: flex;
-        width: fit-content;
-    }
-    
-    .talent-item-active{
-        opacity: 0.8;
-        background: #f0f0f0;
-        box-sizing: border-box;
-        display: flex;
-        width: fit-content;
     }
 }
 

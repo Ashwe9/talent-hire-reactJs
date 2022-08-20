@@ -67,11 +67,10 @@
     
     .talent-item-paragraph{
         font-size: 10px;
-        font-weight: bold;
     }
 
     .talents-box{
-        margin-left: 80px;
+        margin-left: 110px;
     }
 
     .talent-item{
@@ -80,7 +79,6 @@
         box-sizing: border-box;
         display: flex;
         width: fit-content;
-        margin-bottom: 5px;
     }
     
     .talent-item-active{

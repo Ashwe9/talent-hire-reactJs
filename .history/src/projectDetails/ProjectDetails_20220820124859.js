@@ -9,7 +9,7 @@ const ProjectDetails = () => {
     <div>
       <Navbar />
       <Header />
-      <Footer nextTitle="Next: Professional's Details" nextPath="/professionaldetails" previousPath="/kpis"/>
+      <Footer nextTitle="Next: Professional's Details" nextPath="/projectdetails" previousPath="/kpis"/>
     </div>
   )
 }

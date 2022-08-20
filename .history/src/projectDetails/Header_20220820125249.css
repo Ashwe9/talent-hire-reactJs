@@ -6,11 +6,22 @@
     width: 35%;
 }
 
+.header{
+    font-family: "Inter";
+    font-style: bolder;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 30px;
+    align-items: center;
+    color: #141414;
+    margin-bottom: 50px;
+}
+
 .header-by-title{
     font-family: "Inter";
     font-style: bolder;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
     align-items: center;
     color: #141414;
