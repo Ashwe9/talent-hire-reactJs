@@ -1,0 +1,106 @@
+.details-box{
+    padding: 0px 10%;
+    margin-top: 7%;
+    margin-left: 500px;
+}
+
+.detail-item-active{
+    background: #FFFFFF;
+    border: 1px solid #395F8C;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    display: flex;
+    padding: 2%;
+    margin: 2%;
+}
+
+.detail-item{
+    opacity: 0.8;
+    background: #FFFFFF;
+    border: 0.2px solid #8692A6;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    display: flex;
+    padding: 2%;
+    margin: 2%;
+}
+
+
+.detail-check{
+    margin-right: 3%;
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    background-color: #395F8C;
+}
+
+.detail-item-paragraph-active{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #395F8C;
+}
+
+.detail-item-paragraph{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    color: #8692A6;
+}
+
+.details-question{
+    color:#395f8c;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-underline-position: under;
+}
+
+@media only screen and (max-width: 700px) {
+    h2{
+        font-size: 20px;
+    }
+    .detail-item-paragraph-active{
+        font-size: 10px;
+    }
+    
+    .detail-item-paragraph{
+        font-size: 10px;
+    }
+    .details-question{
+        font-size: 14px;
+    }
+    
+  }
+@media only screen and (max-width: 450px) {
+    h2{
+        font-size: 14px;
+    }
+    .detail-item-paragraph-active{
+        font-size: 8px;
+    }
+    
+    .detail-item-paragraph{
+        font-size: 8px;
+    }
+    .details-question{
+        font-size: 10px;
+    }
+}
+
+input[type="checkbox"] { /* change "blue" browser chrome to yellow */
+    filter: invert(20%) hue-rotate(15deg) brightness(1.4);
+  }
+
