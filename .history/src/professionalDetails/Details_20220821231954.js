@@ -29,75 +29,76 @@ const Details = ({title}) => {
         <div className='detail-box'>
           {title==="How long do you need the professional for"? <form className='check-form' style={{marginBottom: "10px"}}>
               <div className={`${checked_1%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount1}>
-              <input type="radio" className="radio" checked={`${checked_1%2===1 ? "checked" : ""}`}/>
+              <input type="radio" name="radio" checked="checked"> </input>
                 <label className={`${checked_1%2===1 ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>Less than 1 month</label>
+                <a> { checked_1%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_2%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount2}>
-                <input type="radio" className="radio" checked={`${checked_2%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_2%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>1-4 months</label>
+                <a> { checked_2%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_3%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount3} >
-              <input type="radio" className="radio" checked={`${checked_3%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_3%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>5-12 months</label>
+                <a> { checked_3%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
                 <div className={`${checked_4%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount4}>
-                <input type="radio" className="radio" checked={`${checked_4%2===1 ? "checked" : ""}`}/>
                   <label className={`${checked_4%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>More than 12 months</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
                 </div>
                 <div className={`${checked_5%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount5}>
-                <input type="radio" className="radio" checked={`${checked_5%2===1 ? "checked" : ""}`}/>
                   <label className={`${checked_5%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>I will decide later</label>
+                  <a> { checked_5%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
           </form> : title==="Number of professionals"? <form className='check-form' style={{marginBottom: "10px"}}>
               <div className={`${checked_1%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount1}>
-              <input type="radio" className="radio" checked={`${checked_1%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_1%2===1 ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>One professional</label>
+                <a> { checked_1%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_2%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount2}>
-              <input type="radio" className="radio" checked={`${checked_2%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_2%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>Two professionals</label>
+                <a> { checked_2%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_3%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount3} >
-              <input type="radio" className="radio" checked={`${checked_3%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_3%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>A cross functional team of professionals</label>
+                <a> { checked_3%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
                 <div className={`${checked_4%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount4}>
-                <input type="radio" className="radio" checked={`${checked_4%2===1 ? "checked" : ""}`}/>
                   <label className={`${checked_4%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>I will decide later</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
                 </div>
           </form> : title==="Level of commitment"? <form className='check-form' style={{marginBottom: "10px"}}>
               <div className={`${checked_1%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount1}>
-              <input type="radio" className="radio" checked={`${checked_1%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_1%2===1 ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>Full time</label>
+                <a> { checked_1%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_2%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount2}>
-              <input type="radio" className="radio" checked={`${checked_2%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_2%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>Part time </label>
+                <a> { checked_2%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_3%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount3} >
-              <input type="radio" className="radio" checked={`${checked_3%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_3%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>Hourly</label>
+                <a> { checked_3%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
                 <div className={`${checked_4%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount4}>
-                <input type="radio" className="radio" checked={`${checked_4%2===1 ? "checked" : ""}`}/>
                   <label className={`${checked_4%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>I will decide later</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
                 </div>
           </form>:<form className='check-form'>
               <div className={`${checked_1%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount1}>
-              <input type="radio" className="radio" checked={`${checked_1%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_1%2===1 ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>Immediately</label>
+                <a> { checked_1%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_2%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount2}>
-              <input type="radio" className="radio" checked={`${checked_2%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_2%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>In 1 or 2 weeks</label>
+                <a> { checked_2%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_3%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount3} >
-              <input type="radio" className="radio" checked={`${checked_3%2===1 ? "checked" : ""}`}/>
                 <label className={`${checked_3%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>More than 2 weeks from now</label>
+                <a> { checked_3%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
                 <div className={`${checked_4%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount4}>
-                <input type="radio" className="radio" checked={`${checked_4%2===1 ? "checked" : ""}`}/>
                   <label className={`${checked_4%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>I will decide later</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
                 </div>
            </form>} 
         </div>

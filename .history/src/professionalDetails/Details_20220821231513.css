@@ -1,0 +1,12 @@
+.detailpro-item{
+    margin-left: 30%;
+    margin-top: 3%;
+    font-size: large;
+}
+
+.detailpro-item-active{
+    margin-left: 30%;
+    margin-top: 3%;
+    font-size: large;
+    color: #388561;
+}

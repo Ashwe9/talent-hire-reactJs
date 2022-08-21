@@ -98,6 +98,7 @@ const Details = ({title}) => {
                 <div className={`${checked_4%2===1 ? "detailpro-item-active" : "detailpro-item"}`} onClick={incrementCount4}>
                 <input type="radio" className="radio" checked={`${checked_4%2===1 ? "checked" : ""}`}/>
                   <label className={`${checked_4%2===1  ? "detailpro-item-paragraph-active" : "detailpro-item-paragraph"}`}>I will decide later</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
                 </div>
            </form>} 
         </div>
