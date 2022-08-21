@@ -67,38 +67,42 @@ const Details = ({title}) => {
                 </div>
           </form> : title==="Level of commitment"? <form className='check-form' style={{marginBottom: "10px"}}>
               <div className={`${checked_1%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount1}>
-                <label className={`${checked_1%2===1 ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Full time</label>
+                <label className={`${checked_1%2===1 ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Financial Planning and Analysis</label>
                 <a> { checked_1%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_2%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount2}>
-                <label className={`${checked_2%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Part time </label>
+                <label className={`${checked_2%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Revenue Management</label>
                 <a> { checked_2%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_3%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount3} >
-                <label className={`${checked_3%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Hourly</label>
+                <label className={`${checked_3%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Expense Management</label>
                 <a> { checked_3%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
                 <div className={`${checked_4%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount4}>
-                  <label className={`${checked_4%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>I will decide later</label>
+                  <label className={`${checked_4%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Cash Flow Management</label>
                   <a> { checked_4%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
                 </div>
           </form>:<form className='check-form'>
               <div className={`${checked_1%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount1}>
-                <label className={`${checked_1%2===1 ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Immediately</label>
+                <label className={`${checked_1%2===1 ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Sales Growth</label>
                 <a> { checked_1%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_2%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount2}>
-                <label className={`${checked_2%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>In 1 or 2 weeks</label>
+                <label className={`${checked_2%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Sales Target</label>
                 <a> { checked_2%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
               <div className={`${checked_3%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount3} >
-                <label className={`${checked_3%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>More than 2 weeks from now</label>
+                <label className={`${checked_3%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Revenue</label>
                 <a> { checked_3%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
                 <div className={`${checked_4%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount4}>
-                  <label className={`${checked_4%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>I will decide later</label>
+                  <label className={`${checked_4%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Customer Churn Rate</label>
                   <a> { checked_4%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
                 </div>
+                <div className={`${checked_5%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount5}>
+                  <label className={`${checked_5%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Lead Conversion Ratio</label>
+                  <a> { checked_5%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
+              </div>
            </form>} 
         </div>
         

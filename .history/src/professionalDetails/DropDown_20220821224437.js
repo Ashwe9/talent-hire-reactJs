@@ -17,7 +17,7 @@ const DropDown = ({title}) => {
             <p className='dropdowns-title'>{title}</p>
             <a> { x%2===0 ? <FaCaretDown id='icons' size={30} style={{}} /> : <FaCaretUp id='icons' size={30} style={{}} />}</a>
         </div>
-        {x%2===1 ? <Details title={title} /> : <></>}
+        {x%2===1 ? <Details /> : <></>}
     </div>
   )
 }

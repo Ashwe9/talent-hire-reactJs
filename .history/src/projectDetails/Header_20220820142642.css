@@ -1,15 +1,15 @@
 .headers-box{
+    margin: 10px 30%;
     padding: 3%;
     padding-bottom: 0%;
     align-items: center;
     width: 40%;
-    margin-left: 28%;
 }
 
 .header{
     font-family: "Inter";
     font-style: bolder;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 35px;
     line-height: 30px;
     align-items: center;

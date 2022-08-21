@@ -96,9 +96,13 @@ const Details = ({title}) => {
                 <a> { checked_3%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
               </div>
                 <div className={`${checked_4%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount4}>
-                  <label className={`${checked_4%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>I will decide later</label>
+                  <label className={`${checked_4%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Customer Churn Rate</label>
                   <a> { checked_4%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
                 </div>
+                <div className={`${checked_5%2===1 ? "talent-item-active" : "talent-item"}`} onClick={incrementCount5}>
+                  <label className={`${checked_5%2===1  ? "talent-item-paragraph-active" : "talent-item-paragraph"}`}>Lead Conversion Ratio</label>
+                  <a> { checked_5%2===0 ? <FaPlus id='icons' size={15}  /> : <FaMinus id='icons' size={15}  />}</a>
+              </div>
            </form>} 
         </div>
         
