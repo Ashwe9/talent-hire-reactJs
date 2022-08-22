@@ -28,17 +28,6 @@
     margin-bottom: 30px;
 }
 
-.detail-check {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance:none;
-    margin-right: 3%;
-    /* Styling checkbox */
-    width: 25px;
-    height: 25px;
-    background-color: rgba(128, 128, 128, 0.611);
-    border-radius: 5px;
-  }
 /*.detail-check{
     margin-right: 3%;
     width: 25px;
@@ -55,6 +44,15 @@
     color: white;
     padding: 25%;
     font-weight: bold;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    margin-right: 3%;
+    /* Styling checkbox */
+    width: 25px;
+    height: 25px;
+    background-color: rgba(128, 128, 128, 0.611);
+    border-radius: 5px;
  }
 
 .detail-item-paragraph-active{
