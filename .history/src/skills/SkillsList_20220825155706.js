@@ -1,0 +1,149 @@
+import React from 'react'
+import './SkillsList.css'
+import { useState } from 'react'
+import {FaPlus, FaMinus} from 'react-skill_icons/fa'
+
+
+const SkillsList = ({title}) => {
+    const [checked_1, setCount1] = useState(0);
+    const incrementCount1 = () => {
+        setCount1(checked_1 + 1);
+      };
+    const [checked_2, setCount2] = useState(0);
+    const incrementCount2 = () => {
+        setCount2(checked_2 + 1);
+    };
+    const [checked_3, setCount3] = useState(0);
+    const incrementCount3 = () => {
+    setCount3(checked_3 + 1);
+    };
+    const [checked_4, setCount4] = useState(0);
+    const incrementCount4 = () => {
+        setCount4(checked_4 + 1);
+    };
+    const [checked_5, setCount5] = useState(0);
+    const incrementCount5 = () => {
+        setCount5(checked_5 + 1);
+        };
+    return (
+        <div className='SkillsList-box'>
+          {title==="Sales"? <form className='check-form' style={{marginBottom: "10px"}}>
+            <div className='row'>
+              <div className={`${checked_1%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount1}>
+                <label className={`${checked_1%2===1 ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Sales Growth</label>
+                <a> { checked_1%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              <div className={`${checked_2%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount2}>
+                <label className={`${checked_2%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Sales Target</label>
+                <a> { checked_2%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              <div className={`${checked_3%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount3} >
+                <label className={`${checked_3%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Revenue</label>
+                <a> { checked_3%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+            </div>
+              <div className='row'>
+                <div className={`${checked_4%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount4}>
+                  <label className={`${checked_4%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Customer Churn Rate</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+                </div>
+                <div className={`${checked_5%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount5}>
+                  <label className={`${checked_5%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Lead Conversion Ratio</label>
+                  <a> { checked_5%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+            </div>
+          </form> : title==="Marketing"? <form className='check-form' style={{marginBottom: "10px"}}>
+            <div className='row'>
+              <div className={`${checked_1%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount1}>
+                <label className={`${checked_1%2===1 ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Customer Segmentation</label>
+                <a> { checked_1%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              <div className={`${checked_2%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount2}>
+                <label className={`${checked_2%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Web and Maketing Analytics</label>
+                <a> { checked_2%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              </div>
+              <div className='row'>
+              <div className={`${checked_3%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount3} >
+                <label className={`${checked_3%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Campaign Performance</label>
+                <a> { checked_3%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+                <div className={`${checked_4%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount4}>
+                  <label className={`${checked_4%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Lead Generation</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+                </div>
+            </div>
+          </form> : title==="Finance"? <form className='check-form' style={{marginBottom: "10px"}}>
+            <div className='row'>
+              <div className={`${checked_1%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount1}>
+                <label className={`${checked_1%2===1 ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Financial Planning and Analysis</label>
+                <a> { checked_1%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              <div className={`${checked_2%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount2}>
+                <label className={`${checked_2%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Revenue Management</label>
+                <a> { checked_2%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              </div>
+              <div className='row'>
+              <div className={`${checked_3%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount3} >
+                <label className={`${checked_3%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Expense Management</label>
+                <a> { checked_3%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+                <div className={`${checked_4%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount4}>
+                  <label className={`${checked_4%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Cash Flow Management</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+                </div>
+            </div>
+          </form> : title==="Development"? <form className='check-form' style={{marginBottom: "10px"}}>
+            <div className='row'>
+              <div className={`${checked_1%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount1}>
+                <label className={`${checked_1%2===1 ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Entreprise Grade Reporting</label>
+                <a> { checked_1%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              <div className={`${checked_2%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount2}>
+                <label className={`${checked_2%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Data Discovery</label>
+                <a> { checked_2%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              </div>
+              <div className='row'>
+              <div className={`${checked_3%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount3} >
+                <label className={`${checked_3%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Centeralized BI</label>
+                <a> { checked_3%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+                <div className={`${checked_4%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount4}>
+                  <label className={`${checked_4%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>IT Infrastructure</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+                </div>
+            </div>
+          </form> :<form className='check-form'>
+            <div className='row'>
+              <div className={`${checked_1%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount1}>
+                <label className={`${checked_1%2===1 ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Sales Growth</label>
+                <a> { checked_1%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              <div className={`${checked_2%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount2}>
+                <label className={`${checked_2%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Sales Target</label>
+                <a> { checked_2%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+              <div className={`${checked_3%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount3} >
+                <label className={`${checked_3%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Revenue</label>
+                <a> { checked_3%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+            </div>
+              <div className='row'>
+                <div className={`${checked_4%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount4}>
+                  <label className={`${checked_4%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Customer Churn Rate</label>
+                  <a> { checked_4%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+                </div>
+                <div className={`${checked_5%2===1 ? "skill-item-active" : "skill-item"}`} onClick={incrementCount5}>
+                  <label className={`${checked_5%2===1  ? "skill-item-paragraph-active" : "skill-item-paragraph"}`}>Lead Conversion Ratio</label>
+                  <a> { checked_5%2===0 ? <FaPlus id='skill_icons' size={15}  /> : <FaMinus id='skill_icons' size={15}  />}</a>
+              </div>
+            </div>
+          </form>} 
+        </div>
+        
+      )
+}
+
+export default SkillsList

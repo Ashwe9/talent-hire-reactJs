@@ -1,8 +1,8 @@
-.talents-box{
+.SkillsList-box{
     margin-left: 515px;
 }
 
-.talent-item-active{
+.skill-item-active{
     background: #FFFFFF;
     border: 1px solid #395F8C;
     box-sizing: border-box;
@@ -13,18 +13,26 @@
     padding-right: 32px;
     width: fit-content;
     margin-right: 10px;
-    margin-bottom: 1%;
 }
 
-#icons{
-    color: #395F8C;
+#skill_icons2{
+    color: #48a97b;
     position:absolute;
     margin-top: 5px;
-    margin-left: 15px;
+    margin-left: 11px;
     margin-right: 5px;
 }
 
-.talent-item{
+#skill_icons1{
+    color: #8692a6;
+    position:absolute;
+    margin-top: 5px;
+    margin-left: 11px;
+    margin-right: 5px;
+}
+
+
+.skill-item{
     opacity: 0.8;
     background: #f0f0f0;
     border: 0.2px solid #f0f0f0;
@@ -36,11 +44,10 @@
     padding-right: 32px;
     width: fit-content;
     margin-right: 10px;
-    margin-bottom: 1%;
 }
 
 
-.talent-item-paragraph-active{
+.skill-item-paragraph-active{
     font-family: "Inter";
     font-style: normal;
     font-weight: bolder;
@@ -50,7 +57,7 @@
     color: #395f8c;
 }
 
-.talent-item-paragraph{
+.skill-item-paragraph{
     font-family: "Inter";
     font-style: normal;
     font-weight: normal;
@@ -66,14 +73,14 @@
     h2{
         font-size: 20px;
     }
-    .talent-item-paragraph-active{
+    .skill-item-paragraph-active{
         font-size: 10px;
     }
     
-    .talent-item-paragraph{
+    .skill-item-paragraph{
         font-size: 10px;
     }
-    .talents-question{
+    .skills-question{
         font-size: 14px;
     }
     
@@ -82,14 +89,14 @@
     h2{
         font-size: 14px;
     }
-    .talent-item-paragraph-active{
+    .skill-item-paragraph-active{
         font-size: 8px;
     }
     
-    .talent-item-paragraph{
+    .skill-item-paragraph{
         font-size: 8px;
     }
-    .talents-question{
+    .skills-question{
         font-size: 10px;
     }
 }
